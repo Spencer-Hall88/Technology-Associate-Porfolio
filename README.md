@@ -1,5 +1,4 @@
 # enterprise-automation-portfolio
-Enterprise Automation & AI Orchestration Portfolio
 
 Welcome to my technical portfolio. This repository contains functional prototypes and architectural models demonstrating my ability to build automated workflows, configure AI agents, and manage data pipelines using modern low-code and Python-based ecosystems.
 
