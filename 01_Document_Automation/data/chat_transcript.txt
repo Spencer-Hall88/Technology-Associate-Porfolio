@@ -1,0 +1,12 @@
+[08:14:22] Dave (SysAdmin): @here Production DB-02 is throwing 500 errors. Web tier cannot establish a handshake. Anyone touching the cluster right now??
+[08:15:01] Sarah (DevOps): Not me. Checked Grafana, CPU on DB-02 just spiked to 99.8%. Memory utilization is flat but I/O operations are pinned.
+[08:16:14] Dave (SysAdmin): Dropping connections fast. Trying to SSH into DB-02... connection timeout. The kernel is completely unresponsive. 
+[08:18:45] Sarah (DevOps): Wait, look at the cron logs from 08:10. Did the automated indexing optimization script run?
+[08:19:30] Dave (SysAdmin): Yeah, it fired off. But it shouldn't lock the whole table. Hold on, let me look at the transaction log storage volume.
+[08:21:05] Dave (SysAdmin): Ah damn it, the `/var/log/mysql` partition is at 100% capacity! The indexing script generated massive temporary transaction logs and ran out of disk space. The database went into a hard-lock state to prevent data corruption.
+[08:22:15] Sarah (DevOps): Classical out-of-space deadlock. Can we spin up an EBS volume snapshot or clear down cold logs to get breathing room?
+[08:24:00] Dave (SysAdmin): I can't SSH in to purge logs manually. I'll have to force-reboot the instance via AWS EC2 console, boot into single-user recovery mode, and attach a temporary 50GB storage volume to unblock the daemon.
+[08:25:30] Sarah (DevOps): Do it. I'll point the load balancer to the read-replica DB-03 in the meantime so the web app stops displaying raw database connection errors to users. 
+[08:32:11] Dave (SysAdmin): Okay, EC2 force-reboot completed. Vol attached. Purged 14GB of expired binary logs from 2024. MySQL service successfully started up again. Handshake verified.
+[08:35:44] Sarah (DevOps): Web traffic is flowing back normal. Read-replica bypassed. All status checks are green.
+[08:37:00] Dave (SysAdmin): Awesome. We need to fix that cron job configuration so it checks disk space before executing, and update the log rotation policy so this never hits 100% again. I'm heading out to grab coffee, let's write the incident report later.
