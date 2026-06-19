@@ -39,3 +39,11 @@ Instant UI Refresh: The frontend automatically re-syncs with the database upon s
 /assets - Visual documentation, including screenshots of the Retool UI dashboard and the backend database schema.
 
 EXECUTION_GUIDE.md - Step-by-step documentation detailing how the application logic and database were configured.
+
+## Visual Architecture
+
+**Frontend Interface (Power Apps Alternative)**
+![App Dashboard](assets/app_dashboard_view.png)
+
+**Backend Database (Dataverse Alternative)**
+![Database Schema](assets/database_schema.png)
