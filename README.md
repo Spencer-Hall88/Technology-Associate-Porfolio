@@ -1,4 +1,4 @@
-# enterprise-automation-portfolio
+Enterprise Automation & AI Orchestration Portfolio
 
 Welcome to my technical portfolio. This repository contains functional prototypes and architectural models demonstrating my ability to build automated workflows, configure AI agents, and manage data pipelines using modern low-code and Python-based ecosystems.
 
@@ -61,3 +61,5 @@ Tech Stack: Retool (Low-Code UI), PostgreSQL, SQL, Event-Driven Automation.
 Architecture: Provisioned a PostgreSQL backend to act as the relational data layer (mirroring Microsoft Dataverse). Developed a drag-and-drop frontend (mirroring Power Apps) with actionable UI components. Wired SQL-based event handlers to custom buttons to automate record updates and UI refreshes (mirroring Power Automate).
 
 Business Value: Demonstrates the ability to act as a "process detective"—identifying workflow inefficiencies and rapidly deploying low-code operational dashboards. Proves deep architectural understanding of the complete Microsoft Power Platform ecosystem using industry-standard alternatives.
+
+Prepared for technical review and interview discussion.
