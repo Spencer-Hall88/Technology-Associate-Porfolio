@@ -22,14 +22,3 @@ While an enterprise might default to Microsoft licensing, this application achie
 **Active Maintenance Queue (Database View)**
 ![Active Issues](assets/active_issues.png)
 
-## Repository Structure
-
-```text
-04_Lightweight_App/
-├── assets/
-│   └── app_interface.png          # Screenshot of the app interface
-|   └── active_issues.png          # Screenshot of the active application
-├──src
-     └── app.py                    # Main Python application and UI logic
-├── DEPLOYMENT_PLAYBOOK.md         # Standard Operating Procedure for deployment
-└── README.md                      # Project documentation
