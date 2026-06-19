@@ -41,3 +41,8 @@ The cleaned dataset is exported as a structured CSV. A dual-axis analytical mode
 
 **Business Intelligence Dashboard: Ticket Volume vs. SLA Compliance**
 ![Analytics Dashboard](assets/analytics_dashboard.png)
+
+## Visual Architecture
+
+**Business Intelligence Dashboard: Ticket Volume vs. SLA Compliance**
+![Analytics Dashboard](assets/analytics_dashboard.png)
