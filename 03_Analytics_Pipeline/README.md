@@ -23,6 +23,11 @@ The pipeline utilizes Python's Pandas library to query the SQLite database and p
 **3. Data Visualization (Load)**
 The cleaned dataset is exported as a structured CSV. A dual-axis analytical model was built to track Ticket Volume (Workload) against SLA Adherence (Success Rate) by Customer Tier. This visualization successfully exposed an operational bottleneck: while average resolution hours remained stable, the sheer volume of VIP tickets caused a massive drop in SLA compliance compared to the Standard tier.
 
+## Visual Architecture
+
+**Business Intelligence Dashboard: Ticket Volume vs. SLA Compliance**
+![Analytics Dashboard](assets/analytics_dashboard.png)
+
 ## Repository Structure
 
 ```text
@@ -37,12 +42,6 @@ The cleaned dataset is exported as a structured CSV. A dual-axis analytical mode
 ├── DEPLOYMENT_PLAYBOOK.md         # Standard Operating Procedure for execution
 └── README.md                      # Project documentation
 
-## Visual Architecture
-
-**Business Intelligence Dashboard: Ticket Volume vs. SLA Compliance**
-![Analytics Dashboard](assets/analytics_dashboard.png)
-
-## Visual Architecture
 
 **Business Intelligence Dashboard: Ticket Volume vs. SLA Compliance**
 ![Analytics Dashboard](assets/analytics_dashboard.png)
