@@ -3,9 +3,6 @@
 ## Overview
 This project is an automated pipeline that transforms raw, unstructured troubleshooting transcripts into formal, compliance-ready Incident Reports. By replicating the backend logic of M365 Copilot, this project demonstrates proficiency in AI orchestration, local LLM deployment, and enterprise document automation.
 
-## Visual Architecture
-![Incident Pipeline](assets/incident_report.png)
-
 ---
 
 ## Standard Operating Procedure: AI-Automated Incident Report Generator
