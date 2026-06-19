@@ -36,3 +36,8 @@ The cleaned dataset is exported as a structured CSV. A dual-axis analytical mode
 │   └── 02_etl_process.py          # Python script executing Pandas ETL
 ├── DEPLOYMENT_PLAYBOOK.md         # Standard Operating Procedure for execution
 └── README.md                      # Project documentation
+
+## Visual Architecture
+
+**Business Intelligence Dashboard: Ticket Volume vs. SLA Compliance**
+![Analytics Dashboard](assets/analytics_dashboard.png)
